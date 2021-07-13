@@ -19,8 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 12;
 
-
+if (votingAge >= 18){
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -32,10 +37,13 @@ Do the following:
 
    HINT: no function required
 */
+let one = 5;
 
+let two = 10;
 
-
-
+if (two === 10) {
+  console.log(one * 100);
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -47,7 +55,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let year = '1999'
 
 
 
@@ -60,11 +68,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
 
-
+console.log(multiply(2, 2))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -76,11 +84,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
 
-
+console.log(dogYears(2))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -109,8 +117,19 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(lbs, age){
+  if (lbs <= 5){
+
+  } else if (lbs <= 10){
+
+  } else if (lbs <=15){
+
+  } else if (lbs > 15){
+
+  }
+   if {
+     age
+   }
 }
 
 
@@ -135,11 +154,32 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
 
-function game(user, computer){
-  /*add your code here*/
+if(computer <= 0.34){
+  computer = 'rock';
+} else if (computer <= 0.67){
+    computer = 'paper';
+  } else if {computer > 0.67){
+    computer = 'scissors';
+  }
 }
 
+function game(user, computer){
+  if(user = computer){
+    return 'it's a tie';
+  } else if (user === 'rock' && computer === 'scissors'){
+    return 'you win!';
+  } else if (user === 'paper' && computer === 'rock'){
+    return 'you win!';
+  } else if (user === 'scissors' && computer === 'paper'){
+    return 'you win!';
+  } else {
+    return 'you lose!';
+  }
+}
+
+console.log('task 4', game('rock', computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -183,10 +223,13 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for (let i = number; i > 0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} 'bottles of soda on the wall`;
+      }
 }
 
+console.log('task 6', annoyingSong(99));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
